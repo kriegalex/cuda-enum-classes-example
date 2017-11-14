@@ -9,6 +9,10 @@
 
 #include <cuda_runtime.h>
 
+/**
+ * For more informations :
+ * https://devblogs.nvidia.com/parallelforall/unified-memory-in-cuda-6/
+ */
 class Managed {
  public:
   void *operator new(size_t len) {
